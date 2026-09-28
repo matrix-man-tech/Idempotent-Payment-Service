@@ -1,0 +1,21 @@
+{
+  "name": "idempotent-payment-retry-service",
+  "version": "1.0.0",
+  "description": "Idempotent payment retry service with state-machine-based deduplication",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --forceExit --detectOpenHandles"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "sql.js": "^1.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "keywords": ["idempotency", "payments", "retry", "state-machine"],
+  "license": "MIT"
+}
